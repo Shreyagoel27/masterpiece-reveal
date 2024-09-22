@@ -1,0 +1,35 @@
+#root {
+  margin: 0 auto;
+  padding: 0;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.main-container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  transform: scale(1); /* Proper usage of transform */
+  transition: width 1.5s, height 1.5s, transform 1.5s;
+  width: 100vw;
+  overflow-y: auto; /* Allow vertical scrolling if needed */
+  overflow-x: hidden; /* Hide horizontal scroll */
+}
+
+.image-container {
+  height: 100vh;
+  align-items: center;
+
+  display: flex;
+  justify-content: center;
+}
+
+.image-info {
+  background-color: white;
+
+  opacity: 0.8;
+  padding: 20px;
+  margin: 20px;
+}
