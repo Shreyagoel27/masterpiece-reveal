@@ -12,7 +12,7 @@ export const imageInfo = [
     info: "We’ve come to the north of India. It feels like summer; flat-bottomed boats ply the Yamuna River.",
   },
   {
-    transform: "scale(4.66667) translate(-31.5%, 21.5%)",
+    transform: "scale(6.66667) translate(-26.5%, 28.5%)",
     info: "A few small birds flutter through the dry air.Also flying creatures of a more celestial order.",
   },
   {
