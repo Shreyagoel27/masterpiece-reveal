@@ -46,36 +46,17 @@ function App() {
   }, []); // No need to add dependencies since refs are managed and imageInfo is static
 
   return (
-    <div
-      style={{
-        position: "relative",
-      }}
-    >
-      <div className="main-container" ref={imageRef}>
-        <img
-          src={bg}
-          alt="bg"
-          style={{
-            width: "100%",
-            height: "100vh",
-            objectFit: "cover",
-            objectPosition: "center",
-          }}
-        />
+    <div className="main-container">
+      <div className="image-main-container">
+        <div className="img-container" ref={imageRef}>
+          <img src={bg} alt="bg" className="bg-image" />
+        </div>
       </div>
-      <div
-        style={{
-          position: "absolute",
-          top: "0",
-          height: "100vh",
-          overflow: "scroll",
-          width: "100%",
-        }}
-      >
+      <div className="content-container">
         {imageInfo.map((image, index) => (
           <div
             key={index}
-            className="image-container"
+            className="info-container"
             data-index={index.toString()} // Set index as a string for the data attribute
             ref={(el) => (containerRefs.current[index] = el)} // Save references to each container
           >
