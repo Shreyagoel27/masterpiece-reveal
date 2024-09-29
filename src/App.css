@@ -67,11 +67,6 @@
   width: 70%;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 0px;
-}
-
 @media screen and (min-width: 768px) {
   .main-container {
     height: 100vh;
