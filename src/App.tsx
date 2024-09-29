@@ -21,7 +21,7 @@ function App() {
               const transform = imageInfo[index].transform;
 
               // Update the transform style of imageRef safely
-              imageRef.current.style.transform = transform;
+              imageRef.current.style.transform = transform || "none";
             }
           }
         });
