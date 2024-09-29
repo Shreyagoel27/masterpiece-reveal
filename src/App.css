@@ -40,6 +40,7 @@
   opacity: 0.8;
   padding: 20px;
   margin: 20px;
+  width: 50%;
 }
 .content-container {
   position: absolute;
@@ -54,6 +55,23 @@
   object-fit: cover;
   object-position: center;
 }
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+.heading > div {
+  background-color: transparent;
+  width: 70%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
 @media screen and (min-width: 768px) {
   .main-container {
     height: 100vh;
@@ -70,5 +88,12 @@
   .content-container {
     position: relative;
     width: 30%;
+  }
+  .heading {
+    color: black;
+    text-align: left;
+  }
+  .image-info {
+    width: 100%;
   }
 }

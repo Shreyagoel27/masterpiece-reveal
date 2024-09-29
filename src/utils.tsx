@@ -2,10 +2,12 @@ export const imageInfo = [
   {
     transform: "scale(1)",
     info: "What a Tiny Masterpiece Reveals About Power and Beauty",
+    className: "heading",
   },
   {
     transform: "scale(1)",
     info: "It's a lush life. Beyond the horizon the empire stirs; here we all dressed up, in extravagant soltitude",
+    fontWeight: "500",
   },
   {
     transform: "scale(6.66667, 6.66667) translate(15.5%, -0.5%)",

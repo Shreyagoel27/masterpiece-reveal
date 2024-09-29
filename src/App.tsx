@@ -56,11 +56,11 @@ function App() {
         {imageInfo.map((image, index) => (
           <div
             key={index}
-            className="info-container"
+            className={`info-container ${image.className}`}
             data-index={index.toString()} // Set index as a string for the data attribute
             ref={(el) => (containerRefs.current[index] = el)} // Save references to each container
           >
-            <div className="image-info">{image.info}</div>
+            <div className="image-info ">{image.info}</div>
           </div>
         ))}
       </div>
