@@ -11,12 +11,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  height: 100%;
   position: relative;
   transform: scale(1); /* Proper usage of transform */
   transition: width 1.5s, height 1.5s, transform 1.5s;
-  overflow-y: auto; /* Allow vertical scrolling if needed */
-  overflow-x: hidden; /* Hide horizontal scroll */
+  overflow: hidden; /* Allow vertical scrolling if needed */
 }
 
 .image-main-container {
@@ -80,7 +79,7 @@
     width: 70%;
   }
 
-  .content-container {
+  .content-container > div {
     position: relative;
     width: 30%;
   }
